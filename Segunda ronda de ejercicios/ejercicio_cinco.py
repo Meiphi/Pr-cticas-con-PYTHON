@@ -3,6 +3,8 @@ Dadas dos fechas informar cual es la más reciente. Determine cuales
 serían los datos de entrada y las leyendas a informar de acuerdo al
 proceso solicitado.
 '''
+#variable global
+fecha_actual = 13, 9, 2020, 
 
 #funcion de mensaje de error
 def error():
@@ -41,8 +43,22 @@ def pedir_fecha():
 
 #funcion que compara las dos fecha y determina la más reciente al dia de la fecha
 def evaluar_fecha_reciente(t_primera_fecha, t_segunda_fecha) #recibi dos tuplas
-	if t_primera_fecha[2] > t_segunda_fecha[2]: #si año1 es mayor a año2
-		
+	if fecha_actual[2] - t_primera_fecha[2] < fecha_actual[2] - t_segunda_fecha[2]:
+		print(f"La fecha más reciente es {t_primera_fecha}")
+	elif fecha_actual[2] - t_primera_fecha[2] > fecha_actual[2] - t_segunda_fecha[2]:
+		print(f"La fecha más reciente es {t_segunda_fecha}")
+	else:
+		if fecha_actual[1] - t_primera_fecha[1] < fecha_actual[1] - t_segunda_fecha[1]:
+			print(f"La fecha más reciente es {t_primera_fecha}")
+		elif fecha_actual[1] - t_primera_fecha[1] > fecha_actual[1] - t_segunda_fecha[1]:
+			print(f"La fecha más reciente es {t_segunda_fecha}")
+		else:
+			if fecha_actual[1] - t_primera_fecha[1] < fecha_actual[1] - t_segunda_fecha[1]:
+				print(f"La fecha más reciente es {t_primera_fecha}")
+			elif fecha_actual[1] - t_primera_fecha[1] > fecha_actual[1] - t_segunda_fecha[1]:
+				print(f"La fecha más reciente es {t_segunda_fecha}")
+				#para validar fecha tengo que agregar en la funcion validacion de fecha que las fechas no puedan ser iguales 
+
 
 
 
