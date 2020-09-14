@@ -78,17 +78,3 @@ t_segunda_fecha = pedir_fecha() #guarda una tupla con la fecha = dia, mes, año
 
 evaluar_fecha_reciente(t_primera_fecha, t_segunda_fecha) #envio dos tuplas
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
