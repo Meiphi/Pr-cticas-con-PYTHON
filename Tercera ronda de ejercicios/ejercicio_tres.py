@@ -8,11 +8,26 @@ Solicitar números al usuario hasta que ingrese el cero. Por cada uno, mostrar l
 def pedir_datos():
 	numero = int(input())
 	list_numeros = [numero]
+	suma_digitos(numero)
 	while numero != 0:
 		numero = int(input())
-		#aca tiene que llamar a una funcion que sume los digitos del número
+		#aca llamar a una funcion que sume los digitos del número
+		suma_digitos(numero)
 		list_numeros.append(numero)
 	return list_numeros
+
+def suma_digitos(num):
+	digitos_del_numero = []
+	while num // 10 != 0:
+		resto = num % 10
+		digitos_del_numero.append(resto)
+		num = num // 10
+	digitos_del_numero.append(num)
+	res_suma_digitos = 0
+	for i in digitos_del_numero:
+		res_suma_digitos = i + res_suma_digitos
+	print("suma de sus digitos: ", res_suma_digitos)
+
 
 
 #funcion sumatoria, recibe una lista de números y retorna la suma de todos
@@ -25,14 +40,17 @@ def sumatoria(list_numeros):
 
 
 ### COMIENZA PROGRAMA
-print("Programa para sumar todos lo números que quiera!\nIngrese un cero para calcular la suma de los números ingresados. También suma digitos")
+print("Programa para sumar todos lo números que quiera!\nIngrese un cero para calcular la suma de los números ingresados.\nTambién suma digitos")
 
 list_numeros = pedir_datos()
 
 
 
-sumatoria(list_numeros)
+sumatoria = sumatoria(list_numeros)
 
+print(f'total: {sumatoria}')
+
+suma_digitos(sumatoria)
 
 
 

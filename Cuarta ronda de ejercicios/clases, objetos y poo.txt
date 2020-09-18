@@ -1,0 +1,21 @@
+CLASES, OBJETOS Y POO
+
+Los tipos de datos estan creadas a partir de clases
+
+Todo python es un objeto
+
+Todo tiene una caracterización
+
+¿Qué es una clase?
+
+Una clas ees un modelo o prototipo que define los atributos y métodos comunes a todos los objetos de cierto grupo, un blueprint
+-atributos: caracteristicas que tendran los objetos pertenecientes a la clase 
+
+-metodos: comportamientos que tendrán los objetos pertenecientes a la clase
+
+
+¿Qué es un objeto?
+
+Un objeto es una cantidad que agrupa un estado y una funcionalidad relacionadas. EL estado 
+
+

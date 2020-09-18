@@ -1,6 +1,7 @@
 '''
 Solicitar números al usuario hasta que ingrese el cero. Por cada uno, mostrar la suma de sus dígitos (utilizando una función que realice dicha suma)
 '''
+
 #funcion para pedir números y retorna una list con todos los numeros
 def pedir_datos():
 	numero = int(input())

@@ -3,7 +3,6 @@ Solicitar al usuario que ingrese su dirección email. Imprimir un mensaje indica
 '''
 #funcion para validar un email
 def validar_email(email):
-	i = 0
 	for arroba in email:
 		if arroba == '@':
 			return True
