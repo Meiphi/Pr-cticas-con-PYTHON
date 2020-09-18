@@ -33,21 +33,10 @@ def suma_digitos(num):
 		digitos_del_numero.append(resto)
 		num = num // 10
 	digitos_del_numero.append(num)
-	res_suma_digitos = 0
-	for i in digitos_del_numero:
-		res_suma_digitos = i + res_suma_digitos
+	res_suma_digitos = sum(digitos_del_numero)
 	return res_suma_digitos
 
 
-#funcion para determinar el mayor; 
-#Recibe por parametro una lista de numeros
-#Retorna la posición en la lista del mayor numero
-def mayor_num(list_suma_digitos):
-	mayor = 0
-	#posicion = 
-	for i in list_suma_digitos: 
-		if i > mayor:
-			mayor = i
 	
 
 #funcion para determinar cant_num_con_sumaDigitos_menor_diez;
@@ -57,20 +46,29 @@ def mayor_num(list_suma_digitos):
 
 print("PROGRAMA 6:\nIngrese un \"0\" para finalizar.\n")
 
-list_numeros = []
 list_numeros = pedir_datos()
 
 list_suma_digitos = [] #para armar una lista con la suma de digitos de cada numero de la lista de números ingresados
-
+list_menores_a_diez = []
 for i in list_numeros:
 	num = suma_digitos(i)
 	list_suma_digitos.append(num)
+	if suma_digitos(i) < 10:
+		list_menores_a_diez.append(i)
 
 #una vez que se llena la lista de la suma de digitos, llamo a la funcion que determina cual es el mayor
 
-mayor_num(list_suma_digitos)
+print("La mayor suma de digitos de los números ingresados:  ", max(list_suma_digitos))
 
+#ahora tengo que capturar la posicion de ese numero y buscar el valor con la misma posicion en la lista de numeros ingresados
 
+list_numeros[list_suma_digitos.index(max(list_suma_digitos))]
+
+#print("Posicion:  ", list_suma_digitos.index(max(list_suma_digitos)))
+
+print("Con el número:  ", list_numeros[list_suma_digitos.index(max(list_suma_digitos))])
+
+print("Cantidad de números cuya suma de digitos son menores a diez:  ", len(list_menores_a_diez))
 
 
 
