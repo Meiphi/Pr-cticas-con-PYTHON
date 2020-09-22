@@ -18,4 +18,4 @@ Una clas ees un modelo o prototipo que define los atributos y métodos comunes a
 
 Un objeto es una cantidad que agrupa un estado y una funcionalidad relacionadas. EL estado 
 
-
+Al definir una classe siempre es con la primera letra Mayúscula
