@@ -18,7 +18,7 @@ class Punto:
 
 	def vector(self, p):
 		vector = (p.x - self.x  ,  p.y - self.x)
-		print(vector)
+			print(vector)
 
 	def distancia(self, p):
 		d = math.sqrt( pow(self.y - self.x, 2) + pow(p.y - p.x, 2) )
