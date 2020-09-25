@@ -8,11 +8,9 @@ frecuencia.
 def calc_frecuencia_digito(datos):
 	#Cuántas veces se repite un digito en un número
 	#Por ejemplo, en 1101 el digito 1 se repite 3 veces.
-	num = datos[0]
-	dig = datos[1]
-	contador_digitos = 0
-	for i in num:  
-		if dig == i:
+	contador_digitos = None
+	for i in dato[0]:  
+		if dato[1] == i:
 			contador_digitos = contador_digitos + 1
 	return contador_digitos
 
