@@ -30,3 +30,7 @@ resultado = sumatoria(list_numeros)
 print(f'La suma de todos sus números: {resultado}')
 
 
+
+
+
+
