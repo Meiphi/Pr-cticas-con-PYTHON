@@ -6,5 +6,5 @@ class Rectangulo(object):
 	"""docstring for Rectangulo"""
 	def __init__(self, arg):
 		super(Rectangulo, self).__init__()
-		self.arg = arg
+		self.arg = xarg
 		
